@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-Hj9d5N4tIv8S4WSKiK8RTNehXtHY+GbGpvBb+C3XNoU2AqYlH26Q4gDPX+gy4jhj" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    .slideshow-container {
+        max-width: 600px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: flex;
+        width: 100%;
+    }
+
+    .poster {
+        width: 100%;
+        height: 550px;
+    }
+.logo{
+    width: 100%;
+        height: 70px;
+}
+    img {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* .whastappimg {
+        width: 20%;
+    } */
+
+    .custom-icon {
+        color: #3498db;
+        font-size: 12px;
+    }
+
+    .btnclass {
+        border-radius: 20px;
+        width: 250px;
+        height: 60px;
+        background-color: #61CE70;
+        margin-left: 50px;
+    }
+
+    .btnclass2:hover {
+        box-shadow: 0 12px 16px 0 rgba(255, 251, 251, 0.24), 0 17px 50px 0 rgba(255, 253, 253, 0.19);
+    }
+
+    .btnclass:hover {
+        box-shadow: 0 12px 16px 0 rgba(255, 251, 251, 0.24), 0 17px 50px 0 rgba(255, 253, 253, 0.19);
+    }
+
+    .btnclass3:hover {
+        box-shadow: 0 12px 16px 0 rgba(255, 251, 251, 0.24), 0 17px 50px 0 rgba(255, 253, 253, 0.19);
+    }
+
+    #slideshow-container {
+        box-shadow: 0 12px 16px 0 rgba(255, 251, 251, 0.24), 0 17px 50px 0 rgba(255, 253, 253, 0.19);
+    }
+
+    .btnclass2 {
+        border-radius: 20px;
+        width: 250px;
+        height: 60px;
+        background-color: #4faff9;
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+
+    .btnclass3 {
+        border-radius: 20px;
+        width: 250px;
+        height: 60px;
+        background-color: #f20e79;
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+
+    i {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 350;
+    }
+
+    .bonus {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    h1 {
+        color: #FFBE00;
+        font-family: "Poppins", Sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .elementor-heading-title {
+        color: #FFFFFF;
+        font-family: "Poppins", Sans-serif;
+        font-size: 74px;
+        font-weight: 800;
+        text-shadow: 13px 11px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .elementor-292 .elementor-element.elementor-element-dc3dee5>.elementor-widget-container {
+        margin: 10px 0px 0px 0px;
+    }
+
+    h3 {
+        color: white;
+        font-family: "Poppins", Sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .allText {
+        color: rgb(5, 5, 5);
+        font-family: "Poppins", Sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .allText2 {
+        color: rgb(255, 255, 255);
+        font-family: "Poppins", Sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .card {
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.25) 0px -12px 30px, rgba(255, 255, 255, 0.25) 0px 4px 6px, rgba(255, 255, 255, 0.25) 0px 12px 13px, rgba(255, 255, 255, 0.25) 0px -3px 5px;
+    }
+
+    .shaking-element {
+        font-size: 3em;
+        animation: shake 0.5s ease infinite;
+    }
+
+    @keyframes shake {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        25%,
+        75% {
+            transform: translateY(10px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .contactusbtn {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .emoji {
+        margin-left: 40px;
+    }
+
+    .glow-button {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+        }
+
+        to {
+            box-shadow: 0 0 20px rgba(52, 152, 219, 1), 0 0 30px rgba(52, 152, 219, 0.8);
+        }
+    }
+</style>
+
+<body style="background-color: black;">
+    <!-- navbar code -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: relative;">
+            <div class="container-fluid">
+                <a class="navbar-brand glow-button" href="#"><img src="https://miro.medium.com/v2/resize:fit:700/1*vwJpYjTL1eMQoMh5iUiT0Q.jpeg" alt="" srcset="" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" style="margin-left: 1250px;">
+                            <!-- <a class="nav-link active" aria-current="page" href="#"><strong
+                                    style="font-family:Arial, Helvetica, sans-serif">Sign Up</strong></a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="section">
+            <div class="show" style="margin: 20px 0px 200px 0px !important; ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div id="slideshow-container">
+                                <div class="mySlides">
+                                    <img src="./imagefair1.jpg" alt="Slide 1" height="20%" class="poster">
+                                </div>
+
+                                <div class="mySlides">
+                                    <img src="./imagefair2.jpg" alt="Slide 2" height="20%" class="poster">
+                                </div>
+
+                                <div class="mySlides">
+                                    <img src="./imagefair3.jpg" alt="Slide 3" height="20%" class="poster">
+                                </div>
+
+                                <div class="mySlides">
+                                    <img src="./imagefair4.jpg" alt="Slide 3" height="20%" class="poster">
+                                </div>
+
+                                <!-- Add more slides as needed -->
+
+                                <!-- Navigation buttons -->
+                                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                            </div>
+                            <br>
+                            <button class="custom-icon btnclass whastappimg">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fa fa-whatsapp" aria-hidden="true"
+                                            style="margin-right:10px; font-size: 50px; color: white; "></i>
+                                    </div>
+                                    <div class="col">
+                                        <strong
+                                            style="font-size: 30px; margin-left: -50px; margin-bottom: -20px; color: white;">WHATSAPP</strong>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="custom-icon btnclass2 telegramimg">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fa fa-telegram" aria-hidden="true"
+                                            style="margin-right:10px; font-size: 48px; color: white; "></i>
+                                    </div>
+                                    <div class="col">
+                                        <strong
+                                            style="font-size: 30px; margin-left: -50px; margin-bottom: -20px; color: white;">TELEGRAM</strong>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="custom-icon btnclass3 instaimg">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fa fa-instagram" aria-hidden="true"
+                                            style="margin-right:10px; font-size: 48px; color: white; "></i>
+                                    </div>
+                                    <div class="col">
+                                        <strong
+                                            style="font-size: 30px; margin-left: -50px; margin-bottom: -20px; color: white;">INSTAGRAM</strong>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <h1>GET<span class="bonus"> 10% </span>ADDITIONAL BONUS</h1>
+                            <h2 class="elementor-heading-title elementor-size-default">FAIRBET7 OFFICIAL</h2>
+                            <h3 class="">Get your online ID from the most famous book of Asia and experience the newest
+                                way
+                                to
+                                invest and win big from Live Sports.</h3>
+                            <h3 style="margin-top: 50px;"><span style="color: #FFBE00;">Fairbet7 ID:</span> www Fairbet7
+                                Com Exchange Betting in India
+                                Get your www.Fairbet7.com Betting ID today with 100% bonus and start placing bets on
+                                Cricket, Casino & other online games.</span>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: -150px; margin-bottom: 50px;">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 25rem;">
+                            <img class="card-img-top"
+                                src="https://cardplayerlifestyle.com/wp-content/uploads/2021/05/casino.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title allText">Get your Id through telegram</h5>
+                                <p class="card-text allText">Get 10% instant bonus now.</p>
+                                <!-- <button class="custom-icon btnclass2 telegramimg">
+                                        <div class="row">
+                                            <div class="col">
+                                                <i class="fa fa-telegram" aria-hidden="true"
+                                                    style="margin-right:10px; font-size: 48px; color: white; "></i>
+                                            </div>
+                                            <div class="col">
+                                                <strong
+                                                    style="font-size: 30px; margin-left: -50px; margin-bottom: -20px; color: white;">Telegram</strong>
+                                            </div>
+                                        </div>
+                                    </button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 25rem;">
+                            <img class="card-img-top"
+                                src="https://img.freepik.com/free-vector/realistic-casino-gambling-illustration_52683-99917.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704672000&semt=ais"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title allText">Get your Id through Whatsapp</h5>
+                                <p class="card-text allText">Take your id and play casino online</p>
+                                <!-- <button class="custom-icon btnclass whastappimg">
+                                        <div class="row">
+                                            <div class="col">
+                                                <i class="fa fa-whatsapp" aria-hidden="true"
+                                                    style="margin-right:10px; font-size: 50px; color: white; "></i>
+                                            </div>
+                                            <div class="col">
+                                                <strong
+                                                    style="font-size: 30px; margin-left: -50px; margin-bottom: -20px; color: white;">Whatsapp</strong>
+                                            </div>
+                                        </div>
+                                    </button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 25rem;">
+                            <img class="card-img-top"
+                                src="https://qph.cf2.quoracdn.net/main-qimg-1fdb95d28474fa9c391e004cf96c41cb-lq"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title allText">Get your Id through Whatsapp</h5>
+                                <p class="card-text allText">Earn money by casino and get 10% instant discount</p>
+                                <!-- <button class="custom-icon btnclass whastappimg">
+                                        <div class="row">
+                                            <div class="col">
+                                                <i class="fa fa-whatsapp" aria-hidden="true"
+                                                    style="margin-right:10px; font-size: 50px; color: white; "></i>
+                                            </div>
+                                            <div class="col">
+                                                <strong
+                                                    style="font-size: 30px; margin-left: -50px; margin-bottom: -20px; color: white;">Whatsapp</strong>
+                                            </div>
+                                        </div>
+                                    </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 50px;">
+                    <h3 class="shaking-element">CONATCT US</h3>
+                    <h3>You can reach out to us by clicking on this WhatsApp button we are always ready to help you.
+                    </h3>
+                    <div class="shaking-element emoji">&#x1F447;</div>
+                    <button class="custom-icon btnclass contactusbtn">
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-whatsapp" aria-hidden="true"
+                                    style="margin-right:10px; font-size: 50px; color: white; "></i>
+                            </div>
+                            <div class="col">
+                                <strong
+                                    style="font-size: 30px; margin-left: -40px; margin-bottom: -20px; color: white;">WHATSAPP</strong>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="background-color: rgb(43, 42, 42);">
+        <footer class="bg-body-tertiary text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgb(43, 42, 42); color: white;
+            font-family: Poppins, Sans-serif;
+            font-size: 10px;
+            font-weight: 700;">
+                © 2024 Copyright
+                <a class="text-body" href="#">
+                    <h4 style="color: white;
+                    font-family: Poppins, Sans-serif;
+                    font-size: 22px;
+                    font-weight: 200;">FAIRBET7 OFFICIAL</h4>
+                </a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+    }
+
+    function plusSlides(n) {
+        clearTimeout(); // Stop the automatic slideshow when manually navigating
+        showSlides(slideIndex += n);
+    }
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".whastappimg").click(function () {
+            const message = encodeURIComponent("Welcome to FAIRBET 7 OFFICIAL");
+            // Replace '123456789' with the actual WhatsApp number
+            var phoneNumber = '7733077779';
+
+            // Create the WhatsApp link
+            var whatsappLink = `https://wa.me/${phoneNumber}?text=${message}  `;
+
+            // Open the link in a new tab
+            window.open(whatsappLink, '_blank');
+        })
+        $(".contactusbtn").click(function () {
+            const message = encodeURIComponent("Welcome to FAIRBET 7 OFFICIAL");
+            // Replace '123456789' with the actual WhatsApp number
+            var phoneNumber = '9057828028';
+
+            // Create the WhatsApp link
+            var whatsappLink = `https://wa.me/${phoneNumber}?text=${message}  `;
+
+            // Open the link in a new tab
+            window.open(whatsappLink, '_blank');
+        })
+        $(".telegramimg").click(function () {
+            var telegramUsername = 'FAIRBET7OFFICIALSG';
+
+            // Create the Telegram URL with the appropriate scheme
+            var telegramURL = 'https://t.me/' + telegramUsername;
+
+            window.open(telegramURL, '_blank');
+            // Redirect the user to the Telegram URL
+            // window.location.href = telegramURL;
+        })
+
+        $(".instaimg").click(function () {
+            // Replace 'https://www.instagram.com/' with the actual URL you want to redirect to
+            var instagramURL = 'https://www.instagram.com/fairbet7_official?igsh=MTh0bjNhd3lveXNzag%3D%3D&utm_source=qr ';
+            window.open(instagramURL, '_blank');
+            
+        })
+    })
+</script>
+
+</html>
